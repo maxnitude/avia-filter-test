@@ -1,0 +1,77 @@
+$main_color: #0087c9;
+$second_color: #f7a65a;
+
+ .flight-to,
+ .flight-from {
+     padding: 0 20px;
+
+     .firstLine {
+         border-bottom: 1px solid rgba($color: gray, $alpha: 0.2);
+         padding: 10px 0;
+
+         &__uid-from {
+             color: $main_color
+         }
+
+         &__arrow-icon {
+             color: $main_color;
+             font-size:20px;
+         }
+
+         &__uid-to {
+             color: $main_color
+         }
+
+     }
+
+     .secondLine {
+         display: flex;
+         justify-content: space-between;
+
+         .fly-from {
+             .date {
+                 color: $main_color;
+                 padding-left: 5px;
+             }
+         }
+
+         .fly-to {
+             .date {
+                 color: $main_color;
+                 padding-right: 5px;
+             }
+         }
+
+     }
+
+     .transfer {
+         display: flex;
+         justify-content: center;
+         color: $second_color;
+
+         &__line {
+            display: block;
+            border-bottom: 1px solid rgb(115, 112, 112);
+            width: 500px;
+            position: relative;
+         }
+
+         &__count {
+            display: block;
+            position: absolute;
+            top:-12px;
+            left:250px-(34px);
+            background-color: #fff;
+         }
+
+     }
+
+     .totalTime{
+        padding-left: 22px;
+    }
+ }
+
+
+
+
+

@@ -1,0 +1,13 @@
+.filters {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 300px;
+    .sort, 
+    .filter,
+    .price,
+    .companies {
+        display: flex;
+        flex-direction: column;
+    }
+}
