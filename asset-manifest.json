@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/avia-filter-test/static/css/main.b1d8bbfa.chunk.css",
-    "main.js": "/avia-filter-test/static/js/main.2f1c8c03.chunk.js",
-    "main.js.map": "/avia-filter-test/static/js/main.2f1c8c03.chunk.js.map",
+    "main.js": "/avia-filter-test/static/js/main.ce18a219.chunk.js",
+    "main.js.map": "/avia-filter-test/static/js/main.ce18a219.chunk.js.map",
     "runtime-main.js": "/avia-filter-test/static/js/runtime-main.08798326.js",
     "runtime-main.js.map": "/avia-filter-test/static/js/runtime-main.08798326.js.map",
     "static/js/2.b692b848.chunk.js": "/avia-filter-test/static/js/2.b692b848.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.08798326.js",
     "static/js/2.b692b848.chunk.js",
     "static/css/main.b1d8bbfa.chunk.css",
-    "static/js/main.2f1c8c03.chunk.js"
+    "static/js/main.ce18a219.chunk.js"
   ]
 }
