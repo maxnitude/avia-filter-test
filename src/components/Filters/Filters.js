@@ -11,17 +11,9 @@ const Filters = ({
     filtering(key, value)
   };
 
-  const handleSortingByAscendingPrice = () => {
-    sorting("Sort Ascending");
-  }
-
-  const handleSortingByDescendingPrice = () => {
-    sorting("Sort Descending");
-  }
-
-  const handleSortingByFlightTime = () => {
-    sorting("Sort by time");
-  }
+  const handleSorting = (value) => {
+    sorting(value)
+  };
 
   const validator = (value) => {
       let changedValue = value.replace(/[^\d]/g,'');
@@ -33,15 +25,15 @@ const Filters = ({
       <div className="sort">
         <p className="sort__name"><strong>Сортировать</strong></p>
         <label>
-          <input name="sort" type="radio" value="toHighPrice" onClick={handleSortingByAscendingPrice} />
+          <input name="sort" type="radio" value="toHighPrice" onClick={() => handleSorting("Sort Ascending")} />
           <span> - по возрастанию</span>
         </label>
         <label>
-          <input name="sort" type="radio" value="toLowPrice" onClick={handleSortingByDescendingPrice} />
+          <input name="sort" type="radio" value="toLowPrice" onClick={() => handleSorting("Sort Descending")} />
           <span> - по убыванию</span>
         </label>
         <label>
-          <input name="sort" type="radio" value="timeInFly" onClick={handleSortingByFlightTime} />
+          <input name="sort" type="radio" value="timeInFly" onClick={() => handleSorting("Sort by time")} />
           <span> - по времени в пути</span>
         </label>
       </div>

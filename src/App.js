@@ -98,7 +98,7 @@ const App = () => {
       } else if (type === "Sort by time") {
         flightTime(data);
         setSortingType("Sort by time")
-      } else return data
+      } else setTickets(data)
  
   };
 
@@ -124,14 +124,13 @@ const App = () => {
   }
 
   useEffect(() => {
-    setTickets(() => sorting(sortingType, mainFilter(allTickets, filters)));
+    sorting(sortingType, mainFilter(allTickets, filters));
   }, [allTickets, filters, sortingType]);
 
 
   return (
     <div className="app">
       <Filters
-        className="filters"
         sorting={sorting}
         filtering={changeFilterSettings}
         filters={filters}
