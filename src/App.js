@@ -6,7 +6,7 @@ import response from "./flights.json";
 const App = () => {
 
   const allTickets = response.result.flights;
-  const [tickets, setTickets] = useState(allTickets);
+  const [tickets, setTickets] = useState([...allTickets]);
   const [airlinesList, setAirlinesList] = useState([]);
   const [sortingType, setSortingType] = useState("none");
   const [filters, setFilters] = useState({
@@ -19,7 +19,7 @@ const App = () => {
 
   useEffect(() => {
     const companies = [];
-    response.result.flights.forEach((ticket) => {
+    allTickets.forEach((ticket) => {
       if (!companies.find((item) => item.uid === ticket.flight.carrier.uid)) {
         companies.push(ticket.flight.carrier);
       }
