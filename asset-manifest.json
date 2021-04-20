@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/avia-filter-test/static/css/main.b1d8bbfa.chunk.css",
-    "main.js": "/avia-filter-test/static/js/main.b09e58a4.chunk.js",
-    "main.js.map": "/avia-filter-test/static/js/main.b09e58a4.chunk.js.map",
+    "main.js": "/avia-filter-test/static/js/main.c2a58c83.chunk.js",
+    "main.js.map": "/avia-filter-test/static/js/main.c2a58c83.chunk.js.map",
     "runtime-main.js": "/avia-filter-test/static/js/runtime-main.08798326.js",
     "runtime-main.js.map": "/avia-filter-test/static/js/runtime-main.08798326.js.map",
-    "static/js/2.b692b848.chunk.js": "/avia-filter-test/static/js/2.b692b848.chunk.js",
-    "static/js/2.b692b848.chunk.js.map": "/avia-filter-test/static/js/2.b692b848.chunk.js.map",
+    "static/js/2.5b43c235.chunk.js": "/avia-filter-test/static/js/2.5b43c235.chunk.js",
+    "static/js/2.5b43c235.chunk.js.map": "/avia-filter-test/static/js/2.5b43c235.chunk.js.map",
     "index.html": "/avia-filter-test/index.html",
     "static/css/main.b1d8bbfa.chunk.css.map": "/avia-filter-test/static/css/main.b1d8bbfa.chunk.css.map",
-    "static/js/2.b692b848.chunk.js.LICENSE.txt": "/avia-filter-test/static/js/2.b692b848.chunk.js.LICENSE.txt",
+    "static/js/2.5b43c235.chunk.js.LICENSE.txt": "/avia-filter-test/static/js/2.5b43c235.chunk.js.LICENSE.txt",
     "static/media/ticket-list.scss": "/avia-filter-test/static/media/refresh.c8a991c4.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.08798326.js",
-    "static/js/2.b692b848.chunk.js",
+    "static/js/2.5b43c235.chunk.js",
     "static/css/main.b1d8bbfa.chunk.css",
-    "static/js/main.b09e58a4.chunk.js"
+    "static/js/main.c2a58c83.chunk.js"
   ]
 }
