@@ -30,7 +30,8 @@ $second_color: #f7a65a;
         outline: none;
         padding: 0;
 
-        &_sign {
+        &::before {
+            content: '';
             display: block;
             float: left;
             height: 20px;
@@ -40,7 +41,7 @@ $second_color: #f7a65a;
             background-size: cover;
             margin-right: 5px;
             margin-left: 10px;
-           
+
         }
 
         &_title {

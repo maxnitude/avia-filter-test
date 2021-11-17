@@ -6,10 +6,7 @@ import "./ticket-list.scss";
 const TicketList = ({ tickets }) => {
   const [counter, setCounter] = useState(2);
   const maxLength = tickets.length;
-  const plusCounter = () => {
-    const newCounter = Math.min(maxLength, counter + 2);
-    setCounter(newCounter);
-  };
+
   if (tickets.length === 0) {
     return <h4 className="message-alert">Билетов нет</h4>;
   }
@@ -27,8 +24,7 @@ const TicketList = ({ tickets }) => {
 
       {maxLength <= counter ? null : (
         <div className="view_more">
-            <button onClick={plusCounter} className="view_more-button">
-                <span className="view_more-button_sign"></span>
+            <button onClick={() => setCounter(Math.min(maxLength, counter + 2))} className="view_more-button">
                 <div className="view_more-button_title">
                     <span>Загрузить еще</span>
                 </div>

@@ -6,13 +6,9 @@ const Filters = ({
   filters,
   airlinesList,
 }) => {
-  
+
   const handleFilter = (key, value) => {
     filtering(key, value)
-  };
-
-  const handleSorting = (value) => {
-    sorting(value)
   };
 
   const validator = (value) => {
@@ -25,15 +21,15 @@ const Filters = ({
       <div className="sort">
         <p className="sort__name"><strong>Сортировать</strong></p>
         <label>
-          <input name="sort" type="radio" value="toHighPrice" onClick={() => handleSorting("Sort Ascending")} />
+          <input name="sort" type="radio" value="toHighPrice" onClick={() => sorting("Sort Ascending")} />
           <span> - по возрастанию</span>
         </label>
         <label>
-          <input name="sort" type="radio" value="toLowPrice" onClick={() => handleSorting("Sort Descending")} />
+          <input name="sort" type="radio" value="toLowPrice" onClick={() => sorting("Sort Descending")} />
           <span> - по убыванию</span>
         </label>
         <label>
-          <input name="sort" type="radio" value="timeInFly" onClick={() => handleSorting("Sort by time")} />
+          <input name="sort" type="radio" value="timeInFly" onClick={() => sorting("Sort by time")} />
           <span> - по времени в пути</span>
         </label>
       </div>
